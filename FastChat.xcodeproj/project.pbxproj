@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		68CA5277205576D400DA54A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA5276205576D400DA54A4 /* AppDelegate.swift */; };
 		68CA5279205576D400DA54A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA5278205576D400DA54A4 /* ViewController.swift */; };
-		68CA527C205576D400DA54A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CA527A205576D400DA54A4 /* Main.storyboard */; };
 		68CA527E205576D400DA54A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA527D205576D400DA54A4 /* Assets.xcassets */; };
 		68CA5281205576D400DA54A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CA527F205576D400DA54A4 /* LaunchScreen.storyboard */; };
 		68CA528C205576D400DA54A4 /* FastChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA528B205576D400DA54A4 /* FastChatTests.swift */; };
@@ -37,7 +36,6 @@
 		68CA5273205576D400DA54A4 /* FastChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CA5276205576D400DA54A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68CA5278205576D400DA54A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		68CA527B205576D400DA54A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68CA527D205576D400DA54A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68CA5280205576D400DA54A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68CA5282205576D400DA54A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,11 +95,9 @@
 		68CA5275205576D400DA54A4 /* FastChat */ = {
 			isa = PBXGroup;
 			children = (
+				68CA52A52055775A00DA54A4 /* Resources */,
+				68CA52A42055775400DA54A4 /* Classes */,
 				68CA5276205576D400DA54A4 /* AppDelegate.swift */,
-				68CA5278205576D400DA54A4 /* ViewController.swift */,
-				68CA527A205576D400DA54A4 /* Main.storyboard */,
-				68CA527D205576D400DA54A4 /* Assets.xcassets */,
-				68CA527F205576D400DA54A4 /* LaunchScreen.storyboard */,
 				68CA5282205576D400DA54A4 /* Info.plist */,
 			);
 			path = FastChat;
@@ -123,6 +119,55 @@
 				68CA5298205576D400DA54A4 /* Info.plist */,
 			);
 			path = FastChatUITests;
+			sourceTree = "<group>";
+		};
+		68CA52A42055775400DA54A4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				68CA52A92055779700DA54A4 /* Models */,
+				68CA52A82055779200DA54A4 /* Views */,
+				68CA52A72055778900DA54A4 /* Controllres */,
+				68CA52A62055778300DA54A4 /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		68CA52A52055775A00DA54A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68CA527D205576D400DA54A4 /* Assets.xcassets */,
+				68CA527F205576D400DA54A4 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68CA52A62055778300DA54A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68CA52A72055778900DA54A4 /* Controllres */ = {
+			isa = PBXGroup;
+			children = (
+				68CA5278205576D400DA54A4 /* ViewController.swift */,
+			);
+			path = Controllres;
+			sourceTree = "<group>";
+		};
+		68CA52A82055779200DA54A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68CA52A92055779700DA54A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +279,6 @@
 			files = (
 				68CA5281205576D400DA54A4 /* LaunchScreen.storyboard in Resources */,
 				68CA527E205576D400DA54A4 /* Assets.xcassets in Resources */,
-				68CA527C205576D400DA54A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +340,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		68CA527A205576D400DA54A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68CA527B205576D400DA54A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		68CA527F205576D400DA54A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -429,11 +465,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
 				INFOPLIST_FILE = FastChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.FastChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,11 +481,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
 				INFOPLIST_FILE = FastChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.FastChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
