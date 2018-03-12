@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		683E75FD2056BA9400269657 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E75FC2056BA9400269657 /* ChatViewController.swift */; };
+		683E75FF2056BACA00269657 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683E75FE2056BACA00269657 /* ChatView.swift */; };
 		684D805F20566418002F032C /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684D805D20566418002F032C /* SVProgressHUD.framework */; };
 		684D806020566418002F032C /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684D805E20566418002F032C /* Chameleon.framework */; };
 		684D8062205666D5002F032C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D8061205666D5002F032C /* WelcomeView.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		451C12BF56AD86712B90D825 /* Pods_FastChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B8042B6C9779ED0C7D2561 /* Pods-FastChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastChatTests/Pods-FastChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		683E75FC2056BA9400269657 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		683E75FE2056BACA00269657 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		684D805D20566418002F032C /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		684D805E20566418002F032C /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		684D8061205666D5002F032C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				684D80632056671B002F032C /* WelcomeViewController.swift */,
 				684D80652056702C002F032C /* RegisterViewController.swift */,
 				684D806920567896002F032C /* LoginViewController.swift */,
+				683E75FC2056BA9400269657 /* ChatViewController.swift */,
 			);
 			path = Controllres;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				684D8061205666D5002F032C /* WelcomeView.swift */,
 				684D80672056704C002F032C /* ResigterView.swift */,
 				684D806B205678C6002F032C /* LoginView.swift */,
+				683E75FE2056BACA00269657 /* ChatView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -556,11 +562,13 @@
 			files = (
 				684D806A20567896002F032C /* LoginViewController.swift in Sources */,
 				68CA52AD20557A3000DA54A4 /* UIView.swift in Sources */,
+				683E75FF2056BACA00269657 /* ChatView.swift in Sources */,
 				684D80662056702C002F032C /* RegisterViewController.swift in Sources */,
 				684D80642056671B002F032C /* WelcomeViewController.swift in Sources */,
 				68CA5277205576D400DA54A4 /* AppDelegate.swift in Sources */,
 				684D8062205666D5002F032C /* WelcomeView.swift in Sources */,
 				684D806C205678C6002F032C /* LoginView.swift in Sources */,
+				683E75FD2056BA9400269657 /* ChatViewController.swift in Sources */,
 				684D80682056704C002F032C /* ResigterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,7 +20,7 @@ class RegisterViewController: UIViewController {
         
     }()
     
-    // MARK: - Life Cycle
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +53,8 @@ class RegisterViewController: UIViewController {
             else {
                 
                 // Success
-//                let viewController = WelcomeViewController()
-//                self.navigationController?.pushViewController(viewController, animated: true)
+                let viewController = ChatViewController()
+                self.navigationController?.pushViewController(viewController, animated: true)
                 
             }
             
