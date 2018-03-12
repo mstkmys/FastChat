@@ -1,0 +1,6 @@
+framework module Pods_FastChatUITests {
+  umbrella header "Pods-FastChatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

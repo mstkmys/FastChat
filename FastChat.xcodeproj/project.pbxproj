@@ -13,7 +13,6 @@
 		68CA5281205576D400DA54A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CA527F205576D400DA54A4 /* LaunchScreen.storyboard */; };
 		68CA528C205576D400DA54A4 /* FastChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA528B205576D400DA54A4 /* FastChatTests.swift */; };
 		68CA5297205576D400DA54A4 /* FastChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA5296205576D400DA54A4 /* FastChatUITests.swift */; };
-		68CA52AB20557A2200DA54A4 /* UIVeiw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA52AA20557A2200DA54A4 /* UIVeiw.swift */; };
 		68CA52AD20557A3000DA54A4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA52AC20557A3000DA54A4 /* UIView.swift */; };
 		68D72F9B20565F9E001BAD57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D72F9A20565F9E001BAD57 /* GoogleService-Info.plist */; };
 		76898BD0C6F40686C60A1353 /* Pods_FastChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF1DC00EC761DD0E4C56334 /* Pods_FastChatUITests.framework */; };
@@ -53,7 +52,6 @@
 		68CA5292205576D400DA54A4 /* FastChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CA5296205576D400DA54A4 /* FastChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastChatUITests.swift; sourceTree = "<group>"; };
 		68CA5298205576D400DA54A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68CA52AA20557A2200DA54A4 /* UIVeiw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVeiw.swift; sourceTree = "<group>"; };
 		68CA52AC20557A3000DA54A4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		68D72F9A20565F9E001BAD57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6CDEB994A7C88D778AF49191 /* Pods-FastChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastChat/Pods-FastChat.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 		68CA52A62055778300DA54A4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				68CA52AA20557A2200DA54A4 /* UIVeiw.swift */,
 				68CA52AC20557A3000DA54A4 /* UIView.swift */,
 			);
 			path = Extensions;
@@ -516,7 +513,6 @@
 			files = (
 				68CA52AD20557A3000DA54A4 /* UIView.swift in Sources */,
 				68CA5279205576D400DA54A4 /* ViewController.swift in Sources */,
-				68CA52AB20557A2200DA54A4 /* UIVeiw.swift in Sources */,
 				68CA5277205576D400DA54A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
