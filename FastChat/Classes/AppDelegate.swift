@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         
-        let viewController = ViewController()
+        let viewController = WelcomeViewController()
         self.window?.rootViewController = UINavigationController(rootViewController: viewController)
         
         // Firebase
