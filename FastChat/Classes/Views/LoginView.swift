@@ -1,5 +1,5 @@
 //
-//  ResigterView.swift
+//  LoginView.swift
 //  FastChat
 //
 //  Created by Miyoshi Masataka on 2018/03/12.
@@ -8,22 +8,22 @@
 
 import UIKit
 
-class ResigterView: UIView {
-    
-    let registerButton: UIButton = {
+class LoginView: UIView {
+
+    let loginButton: UIButton = {
         
         let button = UIButton()
-        button.backgroundColor = UIColor(red: 5 / 255, green: 175 / 255, blue: 75 / 255, alpha: 1.0)
-        button.setTitle("新規登録", for: .normal)
+        button.backgroundColor = UIColor(red: 5 / 255, green: 75 / 255, blue: 45 / 255, alpha: 1.0)
+        button.setTitle("ログイン", for: .normal)
         button.layer.cornerRadius = 10
-        button.addTarget(self, action: #selector(RegisterViewController.buttonTapped(_:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(LoginViewController.buttonTapped(_:)), for: .touchUpInside)
         
         return button
         
     }()
     
     let emailTextField: UITextField = {
-       
+        
         let textField = UITextField()
         textField.placeholder = "Email"
         textField.textAlignment = .center
@@ -46,14 +46,14 @@ class ResigterView: UIView {
         return textField
         
     }()
-
+    
     // MARK: - Initialize
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         // Add Views
-        [registerButton, passwordTextField, emailTextField].forEach{ self.addSubview($0) }
+        [loginButton, passwordTextField, emailTextField].forEach{ self.addSubview($0) }
         
     }
     
@@ -65,7 +65,7 @@ class ResigterView: UIView {
     
     override func layoutSubviews() {
         
-        registerButton.anchor(
+        loginButton.anchor(
             top: nil,
             leading: self.leadingAnchor,
             bottom: self.centerYAnchor,
@@ -77,7 +77,7 @@ class ResigterView: UIView {
         passwordTextField.anchor(
             top: nil,
             leading: self.leadingAnchor,
-            bottom: registerButton.topAnchor,
+            bottom: loginButton.topAnchor,
             trailing: self.trailingAnchor,
             padding: .init(top: 20, left: 20, bottom: 20, right: 20),
             size: .init(width: 0, height: 50)
@@ -95,6 +95,14 @@ class ResigterView: UIView {
     }
 
 }
+
+
+
+
+
+
+
+
 
 
 

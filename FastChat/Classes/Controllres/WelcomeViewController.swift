@@ -36,6 +36,7 @@ class WelcomeViewController: UIViewController {
     private func setupNavigation() {
         
         self.navigationItem.title = "WELCOME"
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "戻る", style: .plain, target: nil, action: nil)
         
     }
     
@@ -49,7 +50,8 @@ class WelcomeViewController: UIViewController {
             self.navigationController?.pushViewController(viewController, animated: true)
             
         case 2:
-            print("ログインボタン")
+            let viewController = LoginViewController()
+            self.navigationController?.pushViewController(viewController, animated: true)
             
         default:
             print("Default...")
