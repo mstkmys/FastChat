@@ -11,6 +11,8 @@
 		684D806020566418002F032C /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684D805E20566418002F032C /* Chameleon.framework */; };
 		684D8062205666D5002F032C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D8061205666D5002F032C /* WelcomeView.swift */; };
 		684D80642056671B002F032C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D80632056671B002F032C /* WelcomeViewController.swift */; };
+		684D80662056702C002F032C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D80652056702C002F032C /* RegisterViewController.swift */; };
+		684D80682056704C002F032C /* ResigterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684D80672056704C002F032C /* ResigterView.swift */; };
 		68CA5277205576D400DA54A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CA5276205576D400DA54A4 /* AppDelegate.swift */; };
 		68CA527E205576D400DA54A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68CA527D205576D400DA54A4 /* Assets.xcassets */; };
 		68CA5281205576D400DA54A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CA527F205576D400DA54A4 /* LaunchScreen.storyboard */; };
@@ -47,6 +49,8 @@
 		684D805E20566418002F032C /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		684D8061205666D5002F032C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		684D80632056671B002F032C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		684D80652056702C002F032C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		684D80672056704C002F032C /* ResigterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResigterView.swift; sourceTree = "<group>"; };
 		68CA5273205576D400DA54A4 /* FastChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CA5276205576D400DA54A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68CA527D205576D400DA54A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				684D80632056671B002F032C /* WelcomeViewController.swift */,
+				684D80652056702C002F032C /* RegisterViewController.swift */,
 			);
 			path = Controllres;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				684D8061205666D5002F032C /* WelcomeView.swift */,
+				684D80672056704C002F032C /* ResigterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -543,9 +549,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				68CA52AD20557A3000DA54A4 /* UIView.swift in Sources */,
+				684D80662056702C002F032C /* RegisterViewController.swift in Sources */,
 				684D80642056671B002F032C /* WelcomeViewController.swift in Sources */,
 				68CA5277205576D400DA54A4 /* AppDelegate.swift in Sources */,
 				684D8062205666D5002F032C /* WelcomeView.swift in Sources */,
+				684D80682056704C002F032C /* ResigterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

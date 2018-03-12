@@ -38,6 +38,25 @@ class WelcomeViewController: UIViewController {
         self.navigationItem.title = "WELCOME"
         
     }
+    
+    // MARK: - Actions
+    
+    @objc func buttonTapped(_ sender: UIButton) {
+        
+        switch sender.tag {
+        case 1:
+            let viewController = RegisterViewController()
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
+        case 2:
+            print("ログインボタン")
+            
+        default:
+            print("Default...")
+            
+        }
+        
+    }
 
 }
 
