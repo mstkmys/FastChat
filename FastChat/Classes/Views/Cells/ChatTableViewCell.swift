@@ -83,6 +83,7 @@ class ChatTableViewCell: UITableViewCell {
             leading: iconImageView.trailingAnchor,
             bottom: nil,
             trailing: messageView.trailingAnchor,
+            padding: .init(top: 0, left: 10, bottom: 0, right: 0),
             size: .init(width: 0, height: self.frame.size.height * 3 / 10)
         )
 
@@ -90,7 +91,8 @@ class ChatTableViewCell: UITableViewCell {
             top: senderUserName.bottomAnchor,
             leading: iconImageView.trailingAnchor,
             bottom: self.bottomAnchor,
-            trailing: self.trailingAnchor
+            trailing: self.trailingAnchor,
+            padding: .init(top: 0, left: 10, bottom: 0, right: 0)
         )
         
     }

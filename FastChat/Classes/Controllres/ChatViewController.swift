@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import Chameleon
 
 class ChatViewController: UIViewController {
     
@@ -20,6 +21,10 @@ class ChatViewController: UIViewController {
         return chatView
         
     }()
+    
+    // MARK: - Properties
+    
+    var messageArray: [Message] = [Message]()
     
     // MARK: - Lifecycle
 
@@ -38,6 +43,9 @@ class ChatViewController: UIViewController {
         // TextFiled: Dategate
         chatView.chatTextField.delegate = self
         
+        // Recieve Chage Messages
+        retrieveMessages()
+        
     }
     
     // MARK: - Methods
@@ -48,6 +56,29 @@ class ChatViewController: UIViewController {
         
         let logoutButton = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(self.logout))
         self.navigationItem.setRightBarButton(logoutButton, animated: true)
+        
+    }
+    
+    private func retrieveMessages() {
+        
+        let messageDB = Database.database().reference().child("Messages")
+        
+        messageDB.observe(.childAdded) { snapshot in
+            
+            let value = snapshot.value as! Dictionary<String, String>
+            
+            guard let text = value["MessageBody"] else { return }
+            guard let sender = value["Sender"] else { return }
+            
+            let message = Message()
+            message.body = text
+            message.sender = sender
+            
+            self.messageArray.append(message)
+            
+            self.chatView.tableView.reloadData()
+            
+        }
         
     }
     
@@ -72,16 +103,21 @@ class ChatViewController: UIViewController {
 extension ChatViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return messageArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = chatView.tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(ChatTableViewCell.self), for: indexPath) as! ChatTableViewCell
         
-        let messageArray = ["First message", "Second message", "Third message"]
+        cell.message.text = self.messageArray[indexPath.row].body
+        cell.senderUserName.text = self.messageArray[indexPath.row].sender
         
-        cell.message.text = messageArray[indexPath.row]
+        if cell.senderUserName.text == Auth.auth().currentUser?.email as String! {
+            
+            cell.iconImageView.backgroundColor = .flatMint()
+            
+        }
         
         return cell
         
@@ -95,7 +131,7 @@ extension ChatViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("Selected: \(indexPath.row)")
+        tableView.deselectRow(at: indexPath, animated: true)
         
     }
     

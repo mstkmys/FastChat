@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
     
@@ -43,6 +44,8 @@ class RegisterViewController: UIViewController {
     // MARK: - Actions
     
     @objc func buttonTapped(_ sender: UIButton) {
+        
+        SVProgressHUD.show()
     
         Auth.auth().createUser(withEmail: registerView.emailTextField.text!, password: registerView.passwordTextField.text!){
             user, error in
@@ -51,6 +54,8 @@ class RegisterViewController: UIViewController {
                 print("Error: \(String(describing: error))")
             }
             else {
+                
+                SVProgressHUD.dismiss()
                 
                 // Success
                 let viewController = ChatViewController()
