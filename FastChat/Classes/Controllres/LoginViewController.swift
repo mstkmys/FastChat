@@ -44,25 +44,21 @@ class LoginViewController: UIViewController {
     
     @objc func buttonTapped(_ sender: UIButton) {
         
-        let viewController = ChatViewController()
-        self.navigationController?.pushViewController(viewController, animated: true)
+        Auth.auth().signIn(withEmail: loginView.emailTextField.text!, password: loginView.passwordTextField.text!) {
+            user, error in
 
-        
-//        Auth.auth().signIn(withEmail: loginView.emailTextField.text!, password: loginView.passwordTextField.text!) {
-//            user, error in
-//
-//            if error != nil {
-//                print("Error, \(String(describing: error))")
-//            }
-//            else {
-//
-//                // Success
-//                let viewController = ChatViewController()
-//                self.navigationController?.pushViewController(viewController, animated: true)
-//
-//            }
-//
-//        }
+            if error != nil {
+                print("Error, \(String(describing: error))")
+            }
+            else {
+
+                // Success
+                let viewController = ChatViewController()
+                self.navigationController?.pushViewController(viewController, animated: true)
+
+            }
+
+        }
         
     }
 

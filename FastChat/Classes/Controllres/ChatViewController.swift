@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class ChatViewController: UIViewController {
     
@@ -104,7 +105,52 @@ extension ChatViewController: UITableViewDelegate {
 /**********************************************************************************************************/
 extension ChatViewController: UITextFieldDelegate {
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        UIView.animate(withDuration: 0.5) {
+            
+            // テキストフィールド上げる
+            
+        }
+        
+    }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        UIView.animate(withDuration: 0.5) {
+            
+            // テキストフィールド下げる
+            
+        }
+        
+        chatView.chatTextField.isEnabled = false
+        
+        let messageDB = Database.database().reference().child("Messages")
+        
+        let messageDictionary = [
+            "Sender": Auth.auth().currentUser?.email,
+            "MessageBody": textField.text!
+        ]
+        
+        messageDB.childByAutoId().setValue(messageDictionary) {
+            error, reference in
+            
+            if error != nil {
+                print("MessageSavingError: \(String(describing: error))")
+            }
+            else {
+                
+                print("Message Save Success.")
+                self.chatView.chatTextField.isEnabled = true
+                self.chatView.chatTextField.text = ""
+                
+            }
+            
+        }
+        
+        return true
+        
+    }
     
 }
 
