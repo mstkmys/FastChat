@@ -6,7 +6,7 @@
 )](https://developer.apple.com/swift)
 [![Twitter](https://img.shields.io/badge/twitter-@mstkmys-blue.svg?style=flat)](https://twitter.com/mstkmys)
 
-This app is Chat Application.
+![chat](https://user-images.githubusercontent.com/12792235/37335091-f122b990-26f0-11e8-8d10-7240bbe93201.gif)
 
 ## Author
 **Masataka Miyoshi**
